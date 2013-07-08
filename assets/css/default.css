@@ -130,11 +130,12 @@ button.grid-2,input[type="button"].grid-2,.button.grid-2{width:50%}
 button.grid-3,input[type="button"].grid-3,.button.grid-3{width:75%}
 button.grid-4,input[type="button"].grid-4,.button.grid-4,button.large,input[type="button"].large,.button.large{width:100%}
 }.card{background:rgba(15,15,17,0.75);border:1px solid #202022;-webkit-border-radius:8px;border-radius:8px;position:relative;}
-.card figure{border-bottom:1px solid #202022;-webkit-border-top-left-radius:8px;border-top-left-radius:8px;-webkit-border-top-right-radius:8px;border-top-right-radius:8px;height:96px;margin-bottom:23px;overflow:hidden;width:100%;}
+.card figure{border-bottom:1px solid #202022;-webkit-border-top-left-radius:8px;border-top-left-radius:8px;-webkit-border-top-right-radius:8px;border-top-right-radius:8px;height:95px;margin-bottom:23px;overflow:hidden;width:100%;}
 .card figure img{height:auto;width:100%}
-.card hgroup:last-child{margin-bottom:-1px}
+.card hgroup{margin-bottom:24px;}
+.card hgroup h1,.card hgroup h2,.card hgroup h3{margin-bottom:0}
 .card hgroup:first-child,.card .card-contents:first-child{margin-top:23px}
-.card .card-contents:first-child{padding-bottom:23px}
+.card hgroup:last-child,.card .card-contents:last-child{margin-bottom:23px}
 .card.green{background-color:rgba(9,55,21,0.5);border-color:#178f47;}
 .card.green figure{border-color:#178f47}
 .card.red{background-color:rgba(68,4,18,0.5);border-color:#9c1123;}
@@ -147,7 +148,7 @@ button.grid-4,input[type="button"].grid-4,.button.grid-4,button.large,input[type
 .card.orange figure{border-color:#a2321f}
 .card.purple{background-color:rgba(36,18,42,0.5);border-color:#7449a0;}
 .card.purple figure{border-color:#7449a0}
-.card-contents{zoom:1;padding:0 20px 22px}
+.card-contents{zoom:1;padding:0 20px}
 .card-contents:before,.card-contents:after{content:"";display:table}
 .card-contents:after{clear:both}
 @media screen and (min-width: 481px) and (max-width: 720px){.card figure{height:192px}
