@@ -58,7 +58,7 @@ table{border-collapse:collapse;border-spacing:0}
 .grid-3{width:75%}
 .grid-4{width:100%}
 }html{font-family:'omnes-pro','Helvetica Neue',Arial,Helvetica,sans-serif;font-size:16px;font-weight:400}
-a{color:#169;text-decoration:none;}
+a{color:#169;text-decoration:none;-webkit-transition:color .25s ease;-moz-transition:color .25s ease;-o-transition:color .25s ease;-ms-transition:color .25s ease;transition:color .25s ease;}
 a:hover{color:#39c;text-decoration:underline}
 p{margin:0 0 24px}
 ul{margin:0 0 24px}
