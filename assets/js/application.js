@@ -7,7 +7,7 @@
   window.Github = {};
 
   Mustaches = {
-    repoList: '<ul>\n  {{# models }}\n    <li class="repo{{# isFork }} repo_forked{{/ isFork }}" id="{{ repoId }}"><a href="{{ repoLink }}">{{ repoName }}</a>{{# repoDescription }} : {{ repoDescription }}{{/ repoDescription }}</li>\n  {{/ models }}\n</ul>'
+    repoList: '{{# models }}\n{{# shouldOpenClear }}<section>{{/ shouldOpenClear }}\n  <div class="repo grid-1" id="{{ repoId }}"><div class="card{{# isFork }} red {{/ isFork }}"><hgroup><h3>{{ repoName }}</h3></hgroup>{{# isFork }}<section class="slice"><div class="alerts-error"><div class="alert">This repo is a fork</div></div></section>{{/ isFork}}<div class="card-contents">{{# repoDescription }}<div class="repo-deets">{{ repoDescription }}</div>{{/ repoDescription }}<a href="{{ repoLink }}" class="button grid-4">Peep this</a><a href="{{ forkLink }}" class="button green grid-4">Fork this</a></div></div></div>\n{{# shouldCloseClear }}</section>{{/ shouldCloseClear }}\n{{/ models }}'
   };
 
   Github.Repo = (function(_super) {
@@ -23,7 +23,16 @@
       this.repoName = this.get("name");
       this.repoDescription = this.get("description");
       this.repoLink = this.get("html_url");
+      this.forkLink = this.get("forks_url");
       return this.isFork = this.get("fork");
+    };
+
+    Repo.prototype.shouldCloseClear = function() {
+      return (this.collection.models.indexOf(this) + 1) % 4 === 0;
+    };
+
+    Repo.prototype.shouldOpenClear = function() {
+      return this.collection.models.indexOf(this) % 4 === 0;
     };
 
     return Repo;
