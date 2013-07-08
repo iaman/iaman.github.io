@@ -129,7 +129,7 @@ button.grid-1,input[type="button"].grid-1,.button.grid-1{width:25%}
 button.grid-2,input[type="button"].grid-2,.button.grid-2{width:50%}
 button.grid-3,input[type="button"].grid-3,.button.grid-3{width:75%}
 button.grid-4,input[type="button"].grid-4,.button.grid-4,button.large,input[type="button"].large,.button.large{width:100%}
-}.card{background:rgba(15,15,17,0.75);border:1px solid #202022;-webkit-border-radius:8px;border-radius:8px;position:relative;}
+}.card{background:rgba(15,15,17,0.75);border:1px solid #202022;-webkit-border-radius:8px;border-radius:8px;position:relative;-webkit-animation-duration:.5s;-moz-animation-duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;animation-duration:.5s;-webkit-animation-iteration-count:1;-moz-animation-iteration-count:1;-o-animation-iteration-count:1;-ms-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-name:'flip-in';-moz-animation-name:'flip-in';-o-animation-name:'flip-in';-ms-animation-name:'flip-in';animation-name:'flip-in';-webkit-animation-timing-function:linear;-moz-animation-timing-function:linear;-o-animation-timing-function:linear;-ms-animation-timing-function:linear;animation-timing-function:linear;}
 .card figure{border-bottom:1px solid #202022;-webkit-border-top-left-radius:8px;border-top-left-radius:8px;-webkit-border-top-right-radius:8px;border-top-right-radius:8px;height:95px;margin-bottom:23px;overflow:hidden;width:100%;}
 .card figure img{height:auto;width:100%}
 .card hgroup{margin-bottom:24px;}
@@ -156,6 +156,16 @@ button.grid-4,input[type="button"].grid-4,.button.grid-4,button.large,input[type
 }@media screen and (min-width: 720px){.card figure{height:288px}
 .grid-2 .card figure{height:192px}
 .grid-1 .card figure{height:96px}
+}@-moz-keyframes flip-in{0%{-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);-ms-transform:rotateY(90deg);transform:rotateY(90deg)}
+100%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}
+}@-webkit-keyframes flip-in{0%{-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);-ms-transform:rotateY(90deg);transform:rotateY(90deg)}
+100%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}
+}@-o-keyframes flip-in{0%{-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);-ms-transform:rotateY(90deg);transform:rotateY(90deg)}
+100%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}
+}@-ms-keyframes flip-in{0%{-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);-ms-transform:rotateY(90deg);transform:rotateY(90deg)}
+100%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}
+}@keyframes flip-in{0%{-webkit-transform:rotateY(90deg);-moz-transform:rotateY(90deg);-o-transform:rotateY(90deg);-ms-transform:rotateY(90deg);transform:rotateY(90deg)}
+100%{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-o-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0)}
 }nav{background-color:#000;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #0f0f11), color-stop(1, #000));background-image:-webkit-linear-gradient(top, #0f0f11 0%, #000 100%);background-image:-moz-linear-gradient(top, #0f0f11 0%, #000 100%);background-image:-o-linear-gradient(top, #0f0f11 0%, #000 100%);background-image:-ms-linear-gradient(top, #0f0f11 0%, #000 100%);background-image:linear-gradient(top, #0f0f11 0%, #000 100%);border-bottom:5px solid #202022;-webkit-box-shadow:0 1px 0 0 #0f0f11,0 1px 0 1px #202022;box-shadow:0 1px 0 0 #0f0f11,0 1px 0 1px #202022;color:#f1f1ff;height:auto;margin-bottom:19px;min-height:48px;width:100%;}
 nav a{display:block;font-size:16px;padding:12px 20px}
 nav li{display:block;float:left;position:relative;}
