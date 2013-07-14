@@ -1,7 +1,3 @@
 .repo-deets {
-  border-bottom: 1px solid #202022;
-  margin-bottom: 23px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
-
-.red .repo-deets { border-color: #9C1123;}
