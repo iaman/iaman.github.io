@@ -4,7 +4,7 @@ Mustaches =
   repoList: '''
       {{# models }}
       {{# shouldOpenClear }}<section>{{/ shouldOpenClear }}
-        <div class="repo grid-1" id="{{ repoId }}"><div class="card{{# isFork }} red {{/ isFork }}"><hgroup><h3>{{ repoName }}</h3></hgroup>{{# isFork }}<section class="slice"><div class="alerts-error"><div class="alert">This repo is a fork</div></div></section>{{/ isFork}}<div class="card-contents">{{# repoDescription }}<div class="repo-deets">{{ repoDescription }}</div><hr />{{/ repoDescription }}<a href="{{ repoLink }}" class="button grid-4">Peep this</a></div></div></div>
+        <div class="repo grid-1" id="{{ repoId }}"><div class="card{{# isFork }} red {{/ isFork }}"><hgroup><h3>{{ repoName }}</h3></hgroup>{{# isFork }}<section class="slice"><div class="alerts-error"><div class="alert">This repo is a fork</div></div></section>{{/ isFork}}<div class="card-contents">{{# repoDescription }}<p class="repo-deets">{{ repoDescription }}</p><hr />{{/ repoDescription }}<a href="{{ repoLink }}" class="button grid-4">Peep this</a></div></div></div>
       {{# shouldCloseClear }}</section>{{/ shouldCloseClear }}
       {{/ models }}
     '''
