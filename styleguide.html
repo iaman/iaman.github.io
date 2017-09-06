@@ -316,5 +316,13 @@
         <h1>Need help? Check out our <a href="https://github.com/iaman/til" target="_blank">github repo</a></h1>
       </hgroup>
     </footer>
-  
+    <script type='text/javascript'>
+      window.addEventListener('keydown', function (e) {
+        if (e.keyCode == 71) {
+            e.preventDefault();
+            if (document.body.className.indexOf('show-grid') > -1) document.body.className = '';
+            else document.body.className = 'show-grid';
+        }
+      });
+    </script>
 </body></html>
